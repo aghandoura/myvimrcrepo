@@ -206,7 +206,7 @@ nmap <leader>l <ESC>:TagbarToggle<cr>
 imap <leader>l <ESC>:TagbarToggle<cr>i
 
 " ============ Omnicompletion and ctags setup============= "
-set tags+=/home/ghandour/.vim/tags/cpp
+set tags+=~/.vim/tags/cpp
 
 "use leader+t to tag current directory and add map it
 map <F4> :!ctags -R --sort=yes --c++-kinds=+pl --fields=+iaS --extra=+q . <CR>
@@ -222,7 +222,7 @@ let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
 let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 
  "Keep the completion menu open and add support for arrow keys
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
