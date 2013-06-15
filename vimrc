@@ -207,6 +207,7 @@ imap <leader>l <ESC>:TagbarToggle<cr>i
 
 " ============ Omnicompletion and ctags setup============= "
 set tags+=~/.vim/tags/cpp
+set tags+=~/.vim/tags/glibc
 
 "use leader+t to tag current directory and add map it
 map <F4> :!ctags -R --sort=yes --c++-kinds=+pl --fields=+iaS --extra=+q . <CR>
