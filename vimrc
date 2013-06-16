@@ -44,9 +44,6 @@ set matchtime=3
 "Changing Leader Key
 let mapleader = ","
 
-" Set title to window
-set title
-
 " Dictionary path, from which the words are being looked up.
 set dictionary=/usr/share/dict/words
 
@@ -97,10 +94,6 @@ set listchars=tab:▸\ ,eol:¬
 nnoremap j gj
 nnoremap k gk
 
-" Rope settings."
-"inoremap <leader>j <ESC>:RopeGotoDefinition<cr>
-
-" Get Rid of stupid Goddamned help keys
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
@@ -196,10 +189,6 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
-
-" Rope Plugin settings
-imap <leader>j <ESC>:RopeGotoDefinition<cr>
-nmap <leader>j <ESC>:RopeGotoDefinition<cr>
 
 " Tagbar key bindings."
 nmap <leader>l <ESC>:TagbarToggle<cr>
