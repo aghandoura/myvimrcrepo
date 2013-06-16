@@ -1,70 +1,56 @@
 Pull all submodules
 ====================
-git submodule foreach git pull
+    git submodule foreach git pull
 
 add submodule:
 ===============
-  git submodule add git://gitxxxx.git vim/bundle/name
-  git submodule init
-
-jj is used instead of escape in insert mode
-
-nmap <leader>l <ESC>:TagbarToggle<cr>
-imap <leader>l <ESC>:TagbarToggle<cr>i
-
-use leader+t to tag current directory and add map it
-map <leader>t: <f4> set tags+=./tags
-
-set pastetoggle=<F3>
+    git submodule add git://gitxxxx.git vim/bundle/name
+    git submodule init
 
 Fix White space
 ==============
-:FixWhitespace
+    :FixWhitespace
 
 vim grep operator
 ================
-viw<leader>g: Visually select a word, then grep for it.
-<leader>g4w: Grep for the next four words.
-<leader>gt;: Grep until semicolon.
+    viw<leader>g: Visually select a word, then grep for it.
+    <leader>g4w: Grep for the next four words.
+    <leader>gt;: Grep until semicolon.
 
-Compview
-=========
-Mapped Keys: <Leader>v   Begin a search.
-type '\c' without the quotes to do a case insensitive
-TaskList:
-leader-d to show Tasklist
-
-q Quit and restore cursor
-e Exit butkeep results window
-cr> - Quit and place the cursor on the selected line.
+Compview TaskList:
+=================
+    search: <Leader>v
+    type '\c' without the quotes to do a case insensitive
+    leader-d to show Tasklist
+        q Quit and restore cursor
+        e Exit butkeep results window
+        cr> - Quit and place the cursor on the selected line.
 
 ConqueTerm
 ===========
-:ConqueTerm bash
+    :ConqueTerm bash
 
 NerdCommenter
 =============
-use leader then corresponding command
-mode, use, command
-'nx', 'Comment', 'cc'
-'nx', 'Toggle', 'c<space>'
-'nx', 'Minimal', 'cm'
-'nx', 'Nested', 'cn'
-'n',  'To EOL', 'c$'
-'nx', 'Invert', 'ci'
-'nx', 'Sexy', 'cs'
-'nx', 'Yank then comment', 'cy'
-'n',  'Append', 'cA'
-'nx', 'Left aligned', 'cl'
-'nx', 'Left and right aligned', 'cb'
-'nx', 'Uncomment', 'cu'
-'n',  'Switch Delimiters', 'ca'
-'i',  'Insert Comment Here', ''
+    use leader then corresponding command
+    Comment, cc
+    Toggle, c<space>
+    Minimal, cm
+    Nested, cn
+    To EOL, c$
+    Invert, ci
+    Sexy', cs
+    Yank then comment, cy
+    Append', cA
+    Left aligned', cl
+    Left and right aligned, cb
+    Uncomment', cu
+    Switch Delimiters', ca
 
 Command-T
 =========
-  <Leader>f     bring up the Command-T file window
-  <Leader>b     bring up the Command-T buffer window
+    <Leader>f     bring up the Command-T file window
+    <Leader>b     bring up the Command-T buffer window
 
     <BS>        delete the character to the left of the cursor
     <Del>       delete the character at the cursor
@@ -100,41 +86,43 @@ has focus:
 
 Snipmate
 ========
- use snippets then tabs
+use snippets then tabs
+
 for c:
- main
- void main mainn
- <> include inc
- "" include Inc
- ifndef def Def
- def
- ifdef
- #if
- #ifnded #define header once
- if
- else el
- ternary op t
- do
- wh
- for
- forr
- func imp fun
- func def fund
- typedef td
- struct st
- typedef struct tds
- typedef enum tde
- printf pr
- fprintf fpr
 
-===========
+    main
+    void main mainn
+    <> include inc
+    "" include Inc
+    ifndef def Def
+    def
+    ifdef
+    #if
+    #ifnded #define header once
+    if
+    else el
+    ternary op t
+    do
+    wh
+    for
+    forr
+    func imp fun
+    func def fund
+    typedef td
+    struct st
+    typedef struct tds
+    typedef enum tde
+    printf pr
+    fprintf fpr
+
+misc
+======
+    jj is used instead of escape in insert mode
+    nmap <leader>l <ESC>:TagbarToggle<cr>
+    imap <leader>l <ESC>:TagbarToggle<cr>i
+    use leader+t to tag current directory and add map it
+    map <leader>t: <f4> set tags+=./tags
+    set pastetoggle=<F3>
+
 To be continued
-
-
-
-
-
-
-
-
-
+===============
