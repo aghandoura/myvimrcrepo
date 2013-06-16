@@ -28,3 +28,6 @@
 [submodule "vim/bundle/jedi-vim"]
 	path = vim/bundle/jedi-vim
 	url = git://github.com/davidhalter/jedi-vim.git
+[submodule "vim/bundle/fix_trailingWs"]
+	path = vim/bundle/fix_trailingWs
+	url = http://github.com/bronson/vim-trailing-whitespace
