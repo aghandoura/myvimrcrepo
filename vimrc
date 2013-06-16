@@ -190,6 +190,9 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
+" commandT change map
+ nnoremap <silent> <Leader>f :CommandT<CR>
+
 " Tagbar key bindings."
 nmap <leader>l <ESC>:TagbarToggle<cr>
 imap <leader>l <ESC>:TagbarToggle<cr>i
