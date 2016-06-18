@@ -1,9 +1,6 @@
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/bundle/simple-pairs"]
-	path = vim/bundle/simple-pairs
-	url = https://github.com/vim-scripts/simple-pairs.git
 [submodule "vim/bundle/minibufexpl"]
 	path = vim/bundle/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim.git
@@ -31,3 +28,6 @@
 [submodule "vim/bundle/fix_trailingWs"]
 	path = vim/bundle/fix_trailingWs
 	url = http://github.com/bronson/vim-trailing-whitespace
+[submodule "vim/bundle/vim-autoclose"]
+	path = vim/bundle/vim-autoclose
+	url = https://github.com/Townk/vim-autoclose
