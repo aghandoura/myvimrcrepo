@@ -1,6 +1,11 @@
 Pull all submodules
 ====================
     git submodule foreach git pull
+	git submodule update --init --recursive
+
+do required setups in submodules commant-t , ycm ...
+====================
+
 
 add submodule:
 ===============

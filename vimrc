@@ -2,6 +2,7 @@
 
 " Pathogen settings.
 filetype off
+syntax on
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
@@ -75,7 +76,7 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=79
-colorschem evening
+colorschem rdark
 
 " To  show special characters in Vim
 "set list
@@ -196,6 +197,15 @@ let g:miniBufExplModSelTarget = 1
 " Tagbar key bindings."
 nmap <leader>l <ESC>:TagbarToggle<cr>
 imap <leader>l <ESC>:TagbarToggle<cr>i
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " ============ Omnicompletion and ctags setup============= "
 set tags+=~/.vim/tags/cpp
