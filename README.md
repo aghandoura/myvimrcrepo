@@ -5,6 +5,8 @@ Pull all submodules
 
 do required setups in submodules commant-t , ycm ...
 ====================
+ycm: in .vim/bundle/YouCompleteMe/third_party/ycmd
+./build.py
 
 
 add submodule:
