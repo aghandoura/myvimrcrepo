@@ -25,7 +25,6 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
-set visualbell
 
 "set cursorline
 set ttyfast
@@ -198,14 +197,18 @@ let g:miniBufExplModSelTarget = 1
 nmap <leader>l <ESC>:TagbarToggle<cr>
 imap <leader>l <ESC>:TagbarToggle<cr>i
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+
+"disable for now
+let g:syntastic_java_checkers = []
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_w = 0
+let g:syntastic_java_javac_config_file_enabled=0
+let g:syntastic_java_javac_autoload_maven_classpath = 0
+
 
 " ============ Omnicompletion and ctags setup============= "
 set tags+=~/.vim/tags/cpp
@@ -248,6 +251,10 @@ let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cp
  let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
  let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
  let g:SuperTabDefaultCompletionType = '<C-n>'
+ nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+ nnoremap <leader>ji :YcmCompleter GoToImplementation<CR>
+ nnoremap <leader>jr :YcmCompleter GoToReferences<CR>
+
 "
 " tab is used with snipmate
 let g:UltiSnipsExpandTrigger = "<tab>"
